@@ -1,0 +1,42 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container{
+    background-color: rgb(red, green, blue);
+}
+.to-do-app{
+    min-height: 45vh;
+    border: 1px solid chocolate;
+    box-shadow: slategray;
+    padding: 75px;
+    border-radius: 15px;
+}
+h1{
+    font-size: 2rem;
+    color:chocolate;
+    text-align: center;
+}
+button{
+    color: white;
+    background-color: chocolate;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 15px;
+}
+input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
