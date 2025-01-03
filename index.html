@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <title>To-Do List Application</title>
 </head>
 <body>
-      <div class="container">
-        <div class="to-do-app">
-            <h1>To-Do-List</h1>
-            <div class="input-container">
-                <input type="text" placeholder="Add Your Task">
-                <button id="add-task">Add</button>
-            </div>
-            <ul id="task-list"></ul><ul id="task-list"></ul>
-          </div>
+    <div class="container">
+        <div class="new_task">
+            <input type="text" placeholder="Add Your Task...">
+            <button id="push">Add</button>
         </div>
-       
+        <div class="tasks"></div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

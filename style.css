@@ -1,42 +1,95 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
+    padding: 0;
     margin: 0;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
 }
-.container{
-    background-color: rgb(red, green, blue);
+html {
+    height: 100%;
 }
-.to-do-app{
-    min-height: 45vh;
-    border: 1px solid chocolate;
-    box-shadow: slategray;
-    padding: 75px;
-    border-radius: 15px;
+body {
+    height: 100vh;
+    background:  linear-gradient(135deg, orange 30%, cyan);
 }
-h1{
-    font-size: 2rem;
-    color:chocolate;
-    text-align: center;
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+    padding: 30px 40px;
 }
-button{
-    color: white;
-    background-color: chocolate;
-    border: 0;
-    outline: 0;
+.new_task {
+    background-color: aliceblue;
+    padding: 30px 20px;
     border-radius: 5px;
-    padding: 10px 15px;
-    margin: 10px;
-    font-size: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
-input{
+.new_task input {
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    border: 2px solid #ffff;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.new_task input:focus {
+    outline: none;
+    border-color: #FF0000;
+}
+.new_task button {
+    float: right;
+    position: relative;
+    top: 10px;
+    width: 15%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color:#FF0000;
+    color: #ffffff;
     border: none;
     outline: none;
-    background: transparent;
-    padding: 10px 15px;
+    cursor: pointer;
+}
+.tasks {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+.task {
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+.task span {
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button {
+    background-color: #FF0000;
+    color: #d1d3d4;
+    height: 100%;
+    width: 40px;
     border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
 }
