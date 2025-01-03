@@ -31,6 +31,8 @@ document.querySelector('#push').onclick = function () {
     }
 };
 
+// if you want to storage your data in browser use this 
+// below code 
 // Load tasks from localStorage when the page loads
 // window.onload = function () {
 //     const tasksContainer = document.querySelector('.tasks');
